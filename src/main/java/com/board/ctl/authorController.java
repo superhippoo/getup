@@ -19,7 +19,7 @@ public class authorController {
 	@Autowired
 	private authorSvc authorsvc;
 
-	//committest
+	//committest2
     @RequestMapping(value = "/selectauthorlist",method = RequestMethod.POST)
     @ResponseBody
     public List<authorVO> selectauthorlist(@RequestBody authorVO authorvo){
