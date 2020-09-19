@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width" initial-scale="1">
+<title>테스트 사이트</title>
+
+<link rel="canonical"
+	href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+
+<!-- 부트스트랩 CSS 로딩  -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+	
+	<!-- 스타일 -->
+<style type="text/css">
+.jumbotron {
+	background-image: url('images/jumbotronBackground.jpg');
+	background-size: cover;
+	text-shadow: white 0.2em 0.2em 0.23em;
+	text-anchor: middle;
+	padding-top: 200px;
+	color: white;
+}
+</style>
+
+<style>
+.bd-placeholder-img {
+	font-size: 1.125rem;
+	text-anchor: middle;
+	-webkit-user-select: none; /* Safari 3.1+ */
+	-moz-user-select: none; /* Firefox 2+ */
+	-ms-user-select: none; /* IE 10+ */
+	user-select: none; /* Standard syntax, 사용자가 선택할 수 없게*/
+}
+
+@media ( min-width : 768px) {
+	.bd-placeholder-img-lg {
+		font-size: 3.5rem;
+		/*padding-top: 56px;*/
+	}
+}
+
+.carousel-item {
+	height: 540px;
+}
+
+@media ( min-width : 768px) {
+	.carousel-item {
+		height: 270px;
+	}
+}
+
+/* Bump up size of carousel content */
+h1 {
+	text-shadow: 0.2em 0.2em 0.23em rgba(255, 255, 255, 0.8);
+	color: #222222;
+}
+
+.carousel-caption p {
+	margin-bottom: 1.25rem;
+	font-size: 1.25rem;
+	line-height: 1.4;
+	background-size: cover;
+	text-shadow: 0.1em 0.1em 0.23em rgba(255, 255, 255, 0.8);
+	color: #222222;
+}
+
+main {
+	padding: 0px 0px;
+}
+
+.container-main {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.radius-square {
+	border-radius: 10px;
+	border-top-right-radius: 20%;
+	border-bottom-left-radius: 20%;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	margin-bottom: 1em;
+	width: 80%;
+	box-shadow: 0.2em 0.2em 0.4em rgba(22, 22, 22, 0.8);
+}
+</style>
+<link href="css/carousel.css" rel="stylesheet">
+
+</head>
+<body>
+
+	<!-- 점보트론 -->
+	<!--     <main role="main" class="container">
+      <div class="jumbotron">
+        <h1>Navbar example</h1>
+          <p class="lead">This example is a quick exercise to illustrate how fixed to top navbar works. As you scroll, it will remain fixed to the top of your browser’s viewport.
+           
+            </p>
+        <a class="btn btn-lg btn-primary" href="/docs/4.5/components/navbar/" role="button">View navbar docs &raquo;</a>
+      </div>
+    </main>
+-->
+
+
+	<main role="main" class="container container-main">
+
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<svg class="bd-placeholder-img" width="100%" height="100%"
+						xmlns="http://www.w3.org/2000/svg"
+						preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+          <img
+							src="images/martabuck-jos-.jpg"
+							alt="캐로셀1">
+          <rect width="100%" height="100%" fill="#3242bd" />
+        </svg>
+					<div class="container">
+						<div class="carousel-caption text-left">
+							<h1>Example headline.</h1>
+							<p>Cras justo odio, dapibus ac facilisis in, egestas eget
+								quam. Donec id elit non mi porta gravida at eget metus. Nullam
+								id dolor id nibh ultricies vehicula ut id elit.</p>
+							<p>
+								<a class="btn btn-lg btn-primary" href="#" role="button">Sign
+									up today</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+          <img src="images/honest-designers-1.jpg" alt="캐로셀2">
+          <rect width="100%" height="100%" fill="#3242bd" />
+        </svg>
+					<div class="container">
+						<div class="carousel-caption text-left">
+							<h1>Another example headline.</h1>
+							<p>Cras justo odio, dapibus ac facilisis in, egestas eget
+								quam. Donec id elit non mi porta gravida at eget metus. Nullam
+								id dolor id nibh ultricies vehicula ut id elit.</p>
+							<p>
+								<a class="btn btn-lg btn-primary" href="#" role="button">Learn
+									more</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<svg class="bd-placeholder-img" width="100%" height="100%"
+						xmlns="http://www.w3.org/2000/svg"
+						preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+          <img
+							src="images/barbara_blast-font-cover.png"
+							alt="캐로셀3">
+          <rect width="100%" height="100%" fill="#3242bd" />
+        </svg>
+					<div class="container">
+						<div class="carousel-caption text-left">
+							<h1>One more for good measure.</h1>
+							<p>Cras justo odio, dapibus ac facilisis in, egestas eget
+								quam. Donec id elit non mi porta gravida at eget metus. Nullam
+								id dolor id nibh ultricies vehicula ut id elit.</p>
+							<p>
+								<a class="btn btn-lg btn-primary" href="#" role="button">Browse
+									gallery</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#myCarousel" role="button"
+				data-slide="prev"> <span class="carousel-control-prev-icon"
+				aria-hidden="true"></span> <span class="sr-only">Previous</span>
+			</a> <a class="carousel-control-next" href="#myCarousel" role="button"
+				data-slide="next"> <span class="carousel-control-next-icon"
+				aria-hidden="true"></span> <span class="sr-only">Next</span>
+			</a>
+		</div>
+
+
+		<!-- Marketing messaging and featurettes
+  ================================================== -->
+		<!-- Wrap the rest of the page in another container to center all the content. -->
+
+		<div class="container marketing">
+
+			<!-- Three columns of text below the carousel -->
+			<div class="row"  id = "wap">
+			</div>
+			<!-- /.row -->
+
+
+			<!-- START THE FEATURETTES -->
+
+			<hr class="featurette-divider">
+
+			<div class="row featurette">
+				<div class="col-md-7">
+					<h2 class="featurette-heading">
+						First featurette heading. <span class="text-muted">It’ll
+							blow your mind.</span>
+					</h2>
+					<p class="lead">Donec ullamcorper nulla non metus auctor
+						fringilla. Vestibulum id ligula porta felis euismod semper.
+						Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+						Fusce dapibus, tellus ac cursus commodo.</p>
+				</div>
+				<div class="col-md-5">
+					<svg
+						class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+						width="500" height="500" xmlns="http://www.w3.org/2000/svg"
+						preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+						aria-label="Placeholder: 500x500">
+						<title>Placeholder</title><rect width="100%" height="100%"
+							fill="#eee" />
+						<text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+				</div>
+			</div>
+
+			<hr class="featurette-divider">
+
+			<div class="row featurette">
+				<div class="col-md-7 order-md-2">
+					<h2 class="featurette-heading">
+						Oh yeah, it’s that good. <span class="text-muted">See for
+							yourself.</span>
+					</h2>
+					<p class="lead">Donec ullamcorper nulla non metus auctor
+						fringilla. Vestibulum id ligula porta felis euismod semper.
+						Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+						Fusce dapibus, tellus ac cursus commodo.</p>
+				</div>
+				<div class="col-md-5 order-md-1">
+					<svg
+						class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+						width="500" height="500" xmlns="http://www.w3.org/2000/svg"
+						preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+						aria-label="Placeholder: 500x500">
+						<title>Placeholder</title><rect width="100%" height="100%"
+							fill="#eee" />
+						<text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+				</div>
+			</div>
+
+			<hr class="featurette-divider">
+
+			<div class="row featurette">
+				<div class="col-md-7">
+					<h2 class="featurette-heading">
+						And lastly, this one. <span class="text-muted">Checkmate.</span>
+					</h2>
+					<p class="lead">Donec ullamcorper nulla non metus auctor
+						fringilla. Vestibulum id ligula porta felis euismod semper.
+						Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+						Fusce dapibus, tellus ac cursus commodo.</p>
+				</div>
+				<div class="col-md-5">
+					<svg
+						class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+						width="500" height="500" xmlns="http://www.w3.org/2000/svg"
+						preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+						aria-label="Placeholder: 500x500">
+						<title>Placeholder</title><rect width="100%" height="100%"
+							fill="#eee" />
+						<text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+				</div>
+			</div>
+
+			<hr class="featurette-divider">
+
+			<!-- /END THE FEATURETTES -->
+
+		</div>
+		<!-- /.container -->
+
+
+
+		<footer class="container">
+			<p class="float-right">
+				<a href="#">Back to top</a>
+			</p>
+			<p>
+				&copy; 2017-2020 Company, Inc. &middot; <a href="#">Privacy</a>
+				&middot; <a href="#">Terms</a>
+			</p>
+		</footer>
+
+		<!-- 제이쿼리 로딩, body 하단에 둘 것. 2줄 순서 변경 금지  -->
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script	src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/js/default.js"></script>
+			
+</body>
+</html>
